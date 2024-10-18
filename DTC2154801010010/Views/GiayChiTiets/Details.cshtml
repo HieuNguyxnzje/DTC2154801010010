@@ -1,0 +1,58 @@
+﻿@model DTC2154801010010.Models.GiayChiTiet
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>GiayChiTiet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenGiay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenGiay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mau)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mau)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Soluong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Soluong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ThongTinGiay.Loai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThongTinGiay.Loai)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
